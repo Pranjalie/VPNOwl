@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- bootstrap cdn -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <!-- css stylesheet -->
+<link rel="stylesheet" href="style.css">
+ <!-- fontawesome cdn -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+var myDate = new Date();
+ var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+     $(document).ready(function(){
+        $("#myModal").modal('show');
+        $('#lblGreetings').text(greet + ", Guest!");
+    });
+
+   setTimeout(()=>{   
+        $("#myModal").modal('hide');
+    }, 5000);
+</script>
+ <title>VPN Owl</title>
+</head>
+<body>
+
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     <img src="./images/unnamed.png" alt="" width="40" height="34">
+     owlVPN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- greeting -->
+<div id="myModal" class="modal fade text-center" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="fw-bold" id="lblGreetings"></span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- jumbotron -->
+<div class="container-fluid py-4" id="about">
+    <div class="p-5 mb-4 bg-dark rounded-3">
+      <div class="container-fluid py-5 text-white text-center">
+        <h1 class="display-5 fw-bold">Lorem ipsum dolor sit amet.</h1>
+        <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolores nam incidunt molestias nulla! Magnam hic minima ab ipsam, vel nostrum consequatur qui sapiente omnis, nisi maxime saepe alias rem!</p>
+        <div class="inline-block btn-group" role="group">
+         <button class="btn btn-primary btn-lg rounded" type="button">Lorem</button>
+         <button class="btn btn-primary btn-lg ms-2 rounded" type="button">Ipsum</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- features -->
+<section id="features">
+<div class="container-fluid mt-5">
+ <div class="bg-light text-center p-5">
+  <div class="row">
+   <div class="col-md-4">
+    <i class="fas fa-globe fa-5x"></i> <br>
+    <h3>Global servers</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptate tenetur architecto quae adipisci unde.</p>
+   </div>
+   <div class="col-md-4">
+    <i class="fas fa-user-check fa-5x"></i> <br>
+    <h3>Enhanced user experience</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptate tenetur architecto quae adipisci unde.</p>
+   </div>
+   <div class="col-md-4">
+    <i class="fas fa-shield-alt fa-5x"></i></i> <br>
+    <h3>Private Browser Protection</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptate tenetur architecto quae adipisci unde.</p>
+   </div>
+  </div>
+ </div>
+</div>
+</section>
+
+<!-- gallery -->
+<section id="gallery">
+<div class="container-fluid bg-dark mt-5 gallery">
+ <div class="text-center p-5 d-flex d-inline">
+  <div class="row">
+  <div class="column">
+    <div class="card">
+       <img src="https://www.howtogeek.com/wp-content/uploads/2018/04/vpn-logo-on-a-smartphone-and-laptop-computer.jpeg?width=1198&trim=1,1&bg-color=000&pad=1,1" class="card-img-top" alt="...">
+   <div class="card-body">
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui.</p>
+   </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+       <img src="https://www.howtogeek.com/wp-content/uploads/2018/04/vpn-logo-on-a-smartphone-and-laptop-computer.jpeg?width=1198&trim=1,1&bg-color=000&pad=1,1" class="card-img-top" alt="...">
+   <div class="card-body">
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui.</p>
+   </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+       <img src="https://www.howtogeek.com/wp-content/uploads/2018/04/vpn-logo-on-a-smartphone-and-laptop-computer.jpeg?width=1198&trim=1,1&bg-color=000&pad=1,1" class="card-img-top" alt="...">
+   <div class="card-body">
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui.</p>
+   </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+       <img src="https://www.howtogeek.com/wp-content/uploads/2018/04/vpn-logo-on-a-smartphone-and-laptop-computer.jpeg?width=1198&trim=1,1&bg-color=000&pad=1,1" class="card-img-top" alt="...">
+   <div class="card-body">
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui.</p>
+   </div>
+    </div>
+  </div>
+</div>
+ </div>
+</div></section>
+
+<!-- reviews -->
+<section  id="reviews">
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
+            <div class="card review-card">
+                <div class="row justify-content-left d-flex">
+                    <div class="col-md-4 d-flex flex-column">
+                        <div class="rating-box">
+                            <h1 class="pt-4">4.0</h1>
+                            <p class="">out of 5</p>
+                        </div>
+                        <div> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-inactive mx-1"></span> </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="rating-bar0 justify-content-center">
+                            <table class="text-start mx-auto">
+                                <tr>
+                                    <td class="rating-label">Excellent</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-5"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-ed">123</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Good</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-4"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-ed">23</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Average</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-3"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-ed">10</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Poor</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-2"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-ed">3</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Terrible</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-1"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-ed">0</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card review-card">
+                <div class="d-flex">
+                    <div class=""> <img class="profile-pic" src="https://media.istockphoto.com/photos/smiling-indian-man-looking-at-camera-picture-id1270067126?k=20&m=1270067126&s=612x612&w=0&h=ZMo10u07vCX6EWJbVp27c7jnnXM2z-VXLd-4maGePqc="> </div>
+                    <div class="d-flex flex-column">
+                        <h3 class="mt-2 mb-0">Mukesh Kumar</h3>
+                        <div>
+                            <p class="text-start"><span class="text-muted">4.0</span> <span class="fa fa-star star-active ms-3"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-inactive"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-start">
+                    <h4 class="blue-text mt-3">"An awesome experience"</h4>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fuga recusandae, assumenda adipisci saepe illum praesentium odit eum sed autem?</p>
+                </div>
+                <div class="text-start mt-4 d-flex">
+                    <p class="like me-3 vote"> <i class="fas fa-thumbs-up"></i><span class="blue-text ps-2">20</span></p>
+                    <p class="unlike vote"> <i class="fas fa-thumbs-down"></i><span class="text-muted ps-2">4</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></section>
+
+<!-- contact -->
+<section  id="contact">
+<div class="container">
+<div class="container-contact100">
+<div class="wrap-contact100 text-white">
+<div class="contact100-pic">
+<img src="https://colorlib.com/etc/cf/ContactFrom_v12/images/img-01.png" alt="IMG">
+</div>
+<form class="contact100-form">
+<span class="contact100-form-title text-white fw-bold fs-1">
+Get in touch
+</span>
+<div class="wrap-input100">
+<input class="input100" type="text" name="name" placeholder="Name">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-user" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100">
+<input class="input100" type="text" name="email" placeholder="Email">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100">
+<textarea class="input100" name="message" placeholder="Message"></textarea>
+<span class="focus-input100"></span>
+</div>
+<div class="container-contact100-form-btn">
+<button class="contact100-form-btn">
+Send
+</button>
+</div>
+</form>
+</div>
+</div>
+</div></section>
+
+<!-- hex code -->
+<div class="form-floating mb-3 floating-hex">
+  <input type="text" class="form-control fw-bold" onkeydown="checkFilled()" id="floatingInput">
+  <label for="floatingInput fw-bold">Background Value</label>
+</div>
+
+<!-- footer -->
+<footer class="bg-dark text-center text-white mt-5">
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright
+  </div>
+</footer>
+
+ <!-- js file -->
+ <script src="index.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
